@@ -1,0 +1,87 @@
+## -------------------------------------------------
+
+# Cleanly quit bspwm
+ctrl + alt + Delete
+	refresh
+
+# make sxhkd reload its configuration files:
+ctrl + shift + Escape
+	pkill -USR1 -x sxhkd
+
+## -------------------------------------------------
+
+# Close window
+super + q
+	bspc  node -c
+
+# Kill window
+super + shift + q
+	bspc  node -k
+
+# Toggle pseudo tiling
+super + shift + t
+	bspc node -t {pseudo_tiled,tiled}
+
+# Set to tiles
+super + t
+	{bspc node -t floating && window-placer $(bspc query -T -d | grep -o '"state":"floating"' | wc -l),bspc node -t tiled}
+
+# Force all windows of the desktop to tile
+super + ctrl + t
+	bspcp tile
+ 
+# Force all windows of the desktop to float and arrange them
+super + ctrl + shift + t
+	bspcp float
+
+# Toggle fullscreen
+super + shift + f
+	bspc node -t {fullscreen,tiled}
+
+# Toggle monocle mode
+super + f
+	bspc desktop -l next
+
+# Try to keep size and position of the selected window
+super + o
+	bspc node -g private
+
+# Make window sticky
+super + i
+	bspc node -g sticky
+
+# Lock a window from closing
+super + Escape
+	bspc node -g locked
+
+# Move current window to largest space
+super + Return
+    windowprompter
+
+# Focus/swap windows by direction
+super + {_,shift + }{h,j,k,l}
+	bspc node --{focus,swap} {west,south,north,east}
+
+# Resize windows
+super + ctrl + {h,j,k,l}
+	bspwm_resize {west,south,north,east}
+
+# Adjust window gap using scroll wheel
+super + button{4,5}
+	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 2 ))
+
+# Change desktop (shift=move focused window)
+super + {_,shift + }{1-9,0}
+    bspc {desktop -f,node -d} ^{1-9,10}
+
+## -------------------------------------------------
+
+# Open terminal
+super + z
+   $TERMINAL 
+
+# Open browser
+super + b
+    $BROWSER
+
+## -------------------------------------------------
