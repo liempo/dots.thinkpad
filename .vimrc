@@ -13,6 +13,13 @@ call plug#begin('~/.vim/plugged')
     
     " Sxhkd syntax highlighting
     Plug 'kovetskiy/sxhkd-vim'
+    
+    " Fuzzy finder
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+
+    " Search highlights
+    Plug 'unblevable/quick-scope'
 call plug#end()
 
 
@@ -24,8 +31,12 @@ set smartindent
 
 " Set relative numbers
 set relativenumber
+set number
+set numberwidth=5
 
 " Set themes and colorscehems
 let g:airline_powerline_fonts = 1
 colorscheme wal
 
+" Set incremental search
+set incsearch
