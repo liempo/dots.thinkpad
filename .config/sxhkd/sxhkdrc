@@ -2,7 +2,7 @@
 
 # Cleanly quit bspwm
 ctrl + alt + Delete
-	refresh
+	sh $HOME/.config/bspwm/bspwmrc
 
 # make sxhkd reload its configuration files:
 ctrl + shift + Escape
@@ -83,5 +83,12 @@ super + z
 # Open browser
 super + b
     $BROWSER
+
+Print
+	sleep 0.2; \
+	scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'
+
+super + Print
+	scrot $HOME/'Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_scrot.png'
 
 ## -------------------------------------------------

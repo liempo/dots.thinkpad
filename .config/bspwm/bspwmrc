@@ -43,8 +43,14 @@ bspc config focused_border_color        "$color15"
 # Desktop rules
 bspc rule -a Gimp state=floating follow=on
 
+# Load screen layout (blocking)
+sh ~/.screenlayout/dual.sh
+
 # Load wallpaper
 sh ~/.fehbg &
 
-# Start polybar
-sh ~/.config/polybar/launch.sh &
+# Set the cursor
+xsetroot -cursor_name left_ptr &
+
+# Start tint2
+tint2 &
