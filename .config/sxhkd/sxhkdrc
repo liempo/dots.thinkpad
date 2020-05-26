@@ -1,4 +1,5 @@
 ## -------------------------------------------------
+## Bindings when things are messed up
 
 # Cleanly quit bspwm
 ctrl + alt + Delete
@@ -9,6 +10,7 @@ ctrl + shift + Escape
 	pkill -USR1 -x sxhkd
 
 ## -------------------------------------------------
+## Basic window stuff
 
 # Close window
 super + q
@@ -54,6 +56,13 @@ super + i
 super + Escape
 	bspc node -g locked
 
+# Mirror and flip leaves of tree
+super + {comma,period}
+	bspc node @/ -F {horizontal,vertical}
+
+## -------------------------------------------------
+## Window movement and swapping
+
 # Move current window to largest space
 super + Return
     windowprompter
@@ -70,11 +79,19 @@ super + ctrl + {h,j,k,l}
 super + button{4,5}
 	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 2 ))
 
+## -------------------------------------------------
+## Basic desktop stuff
+
 # Change desktop (shift=move focused window)
 super + {_,shift + }{1-9,0}
     bspc {desktop -f,node -d} ^{1-9,10}
 
+# Select previous / next desktop
+super + {m,n}
+	bspc desktop -f {prev.occupied,next.occupied}
+
 ## -------------------------------------------------
+## Application shortcuts
 
 # Open terminal
 super + z
@@ -86,9 +103,9 @@ super + b
 
 Print
 	sleep 0.2; \
-	scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'
+	screenshot -s
 
 super + Print
-	scrot $HOME/'Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_scrot.png'
+	screenshot -f
 
 ## -------------------------------------------------

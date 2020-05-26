@@ -1,9 +1,17 @@
 #! /bin/sh
 
-# Run sxhkd if not yet running
-if ! pgrep -x  sxhkd > /dev/null; then
-	sxhkd &
-fi
+# Bash functions that only runs the program if not yet running 
+# To avoid mulitiple programs running
+function run_once {
+    program=$1
+    if ! pgrep -x $program > /dev/null; then
+        $program &
+    fi
+}
+
+# Run programs that needs to be loaded before bspwm config
+run_once sxhkd
+run_once tint2
 
 # Set number of desktops per monitor
 bspc monitor LVDS-1 -d IV V VI
@@ -15,17 +23,17 @@ gap=20
 export gap
 
 bspc config window_gap                  $gap
-bspc config top_padding                 $(($gap / 2))
+bspc config top_padding                 $gap 
 bspc config left_padding                $(($gap / 2))
 bspc config right_padding               $(($gap / 2))
-bspc config bottom_padding              $(($gap / 2))
+bspc config bottom_padding              $gap
 
 
 # Various settings
 bspc config split_ratio                 0.52
-bspc config border_width                3
+bspc config border_width                1
 bspc config borderless_monocle          true
-bspc config gapless_monocle             true
+bspc config gapless_monocle             false
 bspc config remove_disabled_monitors    true
 bspc config remove_unplugged_monitors   true
 
@@ -52,5 +60,7 @@ sh ~/.fehbg &
 # Set the cursor
 xsetroot -cursor_name left_ptr &
 
-# Start tint2
-tint2 &
+# Autostart applications
+run_once picom
+run_once pa-applet
+run_once nm-applet

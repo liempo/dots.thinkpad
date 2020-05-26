@@ -15,11 +15,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
-alias ls="ls -al --block-size=M"
-alias please="sudo"
-alias clock="tty-clock -c"
-alias lpass="lpass show --password -c"
-alias adb="~/.local/share/android-sdk/platform-tools/./adb"
+alias ls="ls -l --block-size=M"
 alias dots='git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 
 # Hide username and host
