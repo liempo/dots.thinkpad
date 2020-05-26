@@ -14,10 +14,6 @@ call plug#begin('~/.vim/plugged')
     " Sxhkd syntax highlighting
     Plug 'kovetskiy/sxhkd-vim'
     
-    " Fuzzy finder
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-
     " Search highlights
     Plug 'unblevable/quick-scope'
 call plug#end()
@@ -40,3 +36,13 @@ colorscheme wal
 
 " Set incremental search
 set incsearch
+
+" Get off my lawn
+nnoremap <Left> :echoe "Use 'h'"<CR>
+nnoremap <Right> :echoe "Use 'l'"<CR>
+nnoremap <Up> :echoe "Use 'k'"<CR>
+nnoremap <Down> :echoe "Use 'j'"<CR>
+
+" Remap Esc key cuz it sucks
+nnoremap <C-space> i
+imap <C-space> <Esc>
