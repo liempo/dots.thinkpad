@@ -27,7 +27,7 @@ wal -i ~/Pictures/wallpaper.jpg -o tint2wal
 | Shell                | ZSH with [Oh-My-ZSH](https://github.com/ohmyzsh/ohmyzsh)                                             |
 | Display Manager      | lightdm (configured with auto-login                                                                  |
 | Sound Mixer          | Pulseaudio                                                                                           |
-| Sound Control        | Pavucontrol                                                                                          |
+| Sound Control        | Pavucontrol & pa-applet                                                                              |
 | Network Manager      | NetworkManager & nm-applet                                                                           |
 | Clipboard Manager    | xclip                                                                                                |
 | Screenshot           | scrot                                                                                                |
@@ -37,3 +37,8 @@ wal -i ~/Pictures/wallpaper.jpg -o tint2wal
 | File Manager         | Thunar, ranger                                                                                       |
 | Music Player         | spotify-tui, spotifyd                                                                                |
 | System Monitor       | gotop                                                                                                |
+
+## <p align="center">Credits / Thanks</p>
+- [Elenapan](https://github.com/owl4ce) for the inspiration.
+- [r/unixporn](https://www.reddit.com/r/unixporn/).
+- Some people in the forum who provide solutions.
