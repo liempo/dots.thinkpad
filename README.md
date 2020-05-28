@@ -39,6 +39,6 @@ wal -i ~/Pictures/wallpaper.jpg -o tint2wal
 | System Monitor       | gotop                                                                                                |
 
 ## <p align="center">Credits / Thanks</p>
-- [Elenapan](https://github.com/owl4ce) for the inspiration.
+- [owl4ce](https://github.com/owl4ce) for the inspiration.
 - [r/unixporn](https://www.reddit.com/r/unixporn/).
 - Some people in the forum who provide solutions.
