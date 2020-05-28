@@ -16,6 +16,9 @@ call plug#begin('~/.vim/plugged')
     
     " Better searching
     Plug 'haya14busa/incsearch.vim'
+
+    " Preview markdown on browser
+    Plug 'iamcco/markdown-preview.vim'
 call plug#end()
 
 
@@ -45,6 +48,13 @@ nnoremap <Left> :echoe "Use 'h'"<CR>
 nnoremap <Right> :echoe "Use 'l'"<CR>
 nnoremap <Up> :echoe "Use 'k'"<CR>
 nnoremap <Down> :echoe "Use 'j'"<CR>
+
+" Set keybindings for markup preview
+let g:mkdp_path_to_chrome = "/usr/bin/firefox"
+nmap <silent> <F8> <Plug>MarkdownPreview
+imap <silent> <F8> <Plug>MarkdownPreview
+nmap <silent> <F9> <Plug>StopMarkdownPreview
+imap <silent> <F9> <Plug>StopMarkdownPreview
 
 " Remap Esc key cuz it sucks
 nmap <c-space> <esc>
