@@ -1,5 +1,5 @@
 # Set our default path
-PATH="/usr/local/sbin:/usr/local/bin:/usr/bin/core_perl:/usr/bin:$HOME/.config/bspwm/panel:$HOME/.bin:$HOME/.local/bin"
+PATH="/usr/local/sbin:/usr/local/bin:$HOME/.bin:$HOME/.local/bin"
 export PATH
 
 # Set default programs
