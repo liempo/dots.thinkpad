@@ -9,9 +9,6 @@ function run_once {
     fi
 }
 
-# Run programs that needs to be loaded before bspwm config
-run_once sxhkd
-run_once tint2
 
 # Set number of desktops per monitor
 bspc monitor LVDS-1 -d IV V VI
@@ -62,5 +59,7 @@ xsetroot -cursor_name left_ptr &
 
 # Autostart applications
 run_once picom
+run_once sxhkd
+run_once tint2
 run_once pa-applet
 run_once nm-applet
