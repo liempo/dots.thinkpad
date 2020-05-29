@@ -17,7 +17,7 @@ bspc config border_width                2
 
 #This creates negative padding equal to window gap so that gaps are shown only between windows and not on desktop edges.
 gap=20
-panel=35
+panel=40
 export gap
 
 bspc config window_gap                  $gap
