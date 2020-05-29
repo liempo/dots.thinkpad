@@ -1,6 +1,9 @@
 #!/usr/bin/sh
 
-## Simple script to link the generated colors of wal to default tint2 config
+#################
+#     tint2     #
+#################
+
 ## -- 1. A pywal user template of a tint2 config must be placed on ~/config/wal/templates/colors.tint2rc
 ## -- 2. Generate a color scheme using pywal
 ## -- 3. Run this script to update tint2, can be ran with a single command
@@ -18,3 +21,13 @@ if [ -f ~/.cache/wal/colors.tint2rc ]; then
 else 
     echo "Wal hasn't been generated or ~/.config/wal/templates/colors.tint2rc is missing"
 fi
+
+
+#################
+#     cava      #
+#################
+
+if [ -f ~/.cache/wal/colors.cava ]; then
+    ln -s ~/.cache/wal/colors.cava ~/.config/cava/config
+fi
+
