@@ -77,7 +77,7 @@ border_color_pressed = #a1a8b9 0
 panel_items = PT:EPC:PPES:P
 panel_size = 100% 35
 panel_margin = 0 10
-panel_padding = 4 4 0
+panel_padding = 6 4 0
 panel_background_id = 4
 wm_menu = 1
 panel_dock = 0
@@ -102,17 +102,18 @@ scale_relative_to_screen_height = 0
 
 #-------------------------------------
 # Taskbar
-taskbar_mode = single_desktop
-taskbar_hide_if_empty = 0
-taskbar_padding = 12 3 8
+taskbar_mode = multi_desktop
+taskbar_hide_if_empty = 1 
+taskbar_distribute_size = 1
+taskbar_padding = 8 4 8 
 taskbar_background_id = 0
 taskbar_active_background_id = 0
-taskbar_name = 1
+taskbar_name = 1 
 taskbar_hide_inactive_tasks = 0
 taskbar_hide_different_monitor = 0
-taskbar_hide_different_desktop = 1
-taskbar_always_show_all_desktop_tasks = 0
-taskbar_name_padding = 5 0
+taskbar_hide_different_desktop = 0
+taskbar_always_show_all_desktop_tasks = 1
+taskbar_name_padding = 6
 taskbar_name_background_id = 3
 taskbar_name_active_background_id = 3
 taskbar_name_font = Segoe UI 8.5
