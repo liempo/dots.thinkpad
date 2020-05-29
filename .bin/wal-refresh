@@ -27,7 +27,8 @@ fi
 #     cava      #
 #################
 
-if [ -f ~/.cache/wal/colors.cava ]; then
+# Check if cava/config is a symbolic link, and colors.cava is generated
+if [[ ! -L ~/.config/cava/config && -f ~/.cache/wal/colors.cava ]]; then
     ln -s ~/.cache/wal/colors.cava ~/.config/cava/config
 fi
 
