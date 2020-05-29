@@ -20,7 +20,7 @@ I run pywal like this:
 wal -i ~/Pictures/wallpaper.jpg -o wal-refresh
 ```
 
- ## <p align="center">Detailed Specifications</p>
+## <p align="center">Detailed Specifications</p>
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
 | Shell                | ZSH with [Oh-My-ZSH](https://github.com/ohmyzsh/ohmyzsh)                                             |
@@ -36,6 +36,10 @@ wal -i ~/Pictures/wallpaper.jpg -o wal-refresh
 | File Manager         | Thunar, ranger                                                                                       |
 | Music Player         | spotify-tui, spotifyd                                                                                |
 | System Monitor       | gotop                                                                                                |
+
+# Minor Details
+ - In [dual.sh](https://github.com/liempo/dots/tree/master/.screenlayout/dual.sh), i added a function to create a temporary file, this is because I don't want to re-run the script everytime I try to refresh bspwm (by running bspwmrc).
+ - There should be a script that will remove the temporary files (named as "fixed"), that will be triggered on poweroff/reboot
 
 ## <p align="center">Credits / Thanks</p>
 - ChilledCow's playlist for making me chill 
