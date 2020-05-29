@@ -11,19 +11,20 @@ function run_once {
 
 
 # Set number of desktops per monitor
-bspc monitor LVDS-1 -d IV V VI
-bspc monitor DP-2 -d I II III
-bspc config border_width         2
+bspc monitor DP-2 -d Home Development Others
+bspc monitor LVDS-1 -d Media
+bspc config border_width                2
 
 #This creates negative padding equal to window gap so that gaps are shown only between windows and not on desktop edges.
 gap=20
+panel=35
 export gap
 
 bspc config window_gap                  $gap
-bspc config top_padding                 $gap 
+bspc config top_padding                 $(($gap / 2))
 bspc config left_padding                $(($gap / 2))
 bspc config right_padding               $(($gap / 2))
-bspc config bottom_padding              $gap
+bspc config bottom_padding              $panel
 
 
 # Various settings
@@ -61,5 +62,3 @@ xsetroot -cursor_name left_ptr &
 run_once picom
 run_once sxhkd
 run_once tint2
-run_once pa-applet
-run_once nm-applet
