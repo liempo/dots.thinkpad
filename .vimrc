@@ -17,8 +17,8 @@ call plug#begin('~/.vim/plugged')
     " Better searching
     Plug 'haya14busa/incsearch.vim'
 
-    " Preview markdown on browser
-    Plug 'iamcco/markdown-preview.vim'
+    " Move selection plug in
+    Plug 'matze/vim-move'
 call plug#end()
 
 
@@ -28,10 +28,8 @@ set shiftwidth=4
 set expandtab
 set smartindent
 
-" Set relative numbers
-set relativenumber
+" Show numbers
 set number
-set numberwidth=5
 
 " Set themes and colorscehems
 let g:airline_powerline_fonts = 1
@@ -49,15 +47,5 @@ nnoremap <Right> :echoe "Use 'l'"<CR>
 nnoremap <Up> :echoe "Use 'k'"<CR>
 nnoremap <Down> :echoe "Use 'j'"<CR>
 
-" Set keybindings for markup preview
-let g:mkdp_path_to_chrome = "/usr/bin/firefox"
-nmap <silent> <F8> <Plug>MarkdownPreview
-imap <silent> <F8> <Plug>MarkdownPreview
-nmap <silent> <F9> <Plug>StopMarkdownPreview
-imap <silent> <F9> <Plug>StopMarkdownPreview
-
-" Remap Esc key cuz it sucks
-nmap <c-space> <esc>
-imap <c-space> <esc>
-vmap <c-space> <esc>
-omap <c-space> <esc>
+" Modifier for vim move plugin
+let g:move_key_modifier = 'C'
