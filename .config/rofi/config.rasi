@@ -1,0 +1,17 @@
+configuration {
+  font: "Segoe UI 9";
+  padding: 			  20;
+  line-padding: 4;
+  borderwidth: 4;
+  color-enabled: true;
+  hide-scrollbar: true;
+  show-icons:         true;
+  icon-theme:         "Papirus";
+  cycle:              true;
+  hide-scrollbar:     true;
+  disable-history:    false;
+  modi:               "drun";
+  display-drun:       "apps";
+  columns: 3;
+  theme: "~/.cache/wal/colors-rofi-dark.rasi";
+}
