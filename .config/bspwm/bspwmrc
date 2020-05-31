@@ -9,10 +9,12 @@ function run_once {
     fi
 }
 
+# Load screen layout (blocking)
+sh ~/.screenlayout/dual.sh
 
 # Set number of desktops per monitor
-bspc monitor DP-2 -d Home Development Others
-bspc monitor LVDS-1 -d Media
+bspc monitor DP-2 -n 0 -d               Home Development Others
+bspc monitor LVDS-1 -n 1 -d             Media
 bspc config border_width                2
 
 #This creates negative padding equal to window gap so that gaps are shown only between windows and not on desktop edges.
@@ -48,9 +50,6 @@ bspc config focused_border_color        "$color15"
 
 # Desktop rules
 bspc rule -a Gimp state=floating follow=on
-
-# Load screen layout (blocking)
-sh ~/.screenlayout/dual.sh
 
 # Load wallpaper
 sh ~/.fehbg &
