@@ -4,8 +4,8 @@
 export ZSH=~/.oh-my-zsh
 
 # Fzf defaults
-export FZF_DEFAULT_COMMAND='rg --files --hidden --ignore-file ~/.config/.rg_ignore'
-export FZF_DEFAULT_OPTS='--height 25% --layout=reverse --border'
+export FZF_DEFAULT_OPTS='--height 15% --layout=reverse --border'
+export FZF_TMUX_HEIGHT='15%'
 
 # Update wal colors (must be initialized in .fehbg)
 cat ~/.cache/wal/sequences
@@ -26,7 +26,6 @@ bindkey '^L' forward-char
 bindkey '^H' backward-char
 
 # Aliases
-alias grep='rg'
 alias ls="ls -l --block-size=M"
 alias dots='git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 
