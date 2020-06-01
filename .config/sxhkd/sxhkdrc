@@ -93,6 +93,10 @@ super + {m,n}
 ## -------------------------------------------------
 ## Application shortcuts
 
+# Open rofi (used with xcape)
+super + shift + space
+	rofi -show
+
 # Open terminal
 super + z
    $TERMINAL 
