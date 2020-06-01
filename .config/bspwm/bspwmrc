@@ -9,9 +9,6 @@ function run_once {
     fi
 }
 
-# Load screen layout (blocking)
-sh ~/.screenlayout/dual.sh
-
 # Set number of desktops per monitor
 bspc monitor DP-2 -n 0 -d               Home Development Others
 bspc monitor LVDS-1 -n 1 -d             Media
@@ -53,6 +50,9 @@ bspc rule -a Gimp state=floating follow=on
 
 # Load wallpaper
 sh ~/.fehbg &
+
+# Fix Java error
+wmname LG3D
 
 # Set the cursor
 xsetroot -cursor_name left_ptr &
