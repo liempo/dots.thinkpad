@@ -1,0 +1,28 @@
+#! /bin/sh
+
+# Bash functions that only runs the program if not yet running 
+# To avoid mulitiple programs running
+function run_once {
+    program=$1
+    if ! pgrep -x $program > /dev/null; then
+        $program &
+    fi
+}
+
+# Load wallpaper
+sh ~/.fehbg &
+
+# Bind super key to super + shift  + space 
+# Which is bound to rofi in sxhkd
+xcape -e 'Super_L=Super_L|Shift_L|space' &
+
+# Set the cursor
+xsetroot -cursor_name left_ptr &
+
+# Fix Java error
+wmname LG3D
+
+# Autostart applications
+run_once picom
+run_once sxhkd
+run_once tint2
