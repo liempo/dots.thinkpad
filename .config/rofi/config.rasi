@@ -13,5 +13,5 @@ configuration {
   modi:               "drun";
   display-drun:       "apps";
   columns: 3;
-  theme: "~/.cache/wal/colors-rofi-dark.rasi";
+  theme: "~/.cache/wal/colors.rasi";
 }
