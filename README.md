@@ -25,19 +25,19 @@ wal -i ~/Pictures/wallpaper.jpg -o wal-refresh
 |----------------------|------------------------------------------------------------------------------------------------------|
 | Shell                | ZSH with [Oh-My-ZSH](https://github.com/ohmyzsh/ohmyzsh)                                             |
 | Display Manager      | lightdm (configured with auto-login                                                                  |
-| Sound Mixer          | Pulseaudio                                                                                           |
-| Sound Control        | Pavucontrol & pa-applet                                                                              |
-| Network Manager      | NetworkManager & nm-applet                                                                           |
+| Sound Mixer          | pulseaudio                                                                                           |
+| Sound Control        | pavucontrol                                                                                          |
+| Network Manager      | NetworkManager                                                                                       |
 | Clipboard Manager    | xclip                                                                                                |
 | Screenshot           | scrot                                                                                                |
-| Browser              | Firefox                                                                                              |
+| Browser              | firefox                                                                                              |
 | Text Editor          | vim                                                                                                  |
 | Image Viewer         | feh                                                                                                  |
-| File Manager         | Thunar, ranger                                                                                       |
+| File Manager         | thunar, ranger                                                                                       |
 | Music Player         | spotify-tui, spotifyd                                                                                |
 | System Monitor       | gotop                                                                                                |
 
-# Minor Details
+## M<p align="center">inor Details</p>
  - In [dual.sh](https://github.com/liempo/dots/tree/master/.screenlayout/dual.sh), i added a function to create a temporary file, this is because I don't want to re-run the script everytime I try to refresh bspwm (by running bspwmrc).
  - There should be a script that will remove the temporary files (named as "fixed"), that will be triggered on poweroff/reboot
 
