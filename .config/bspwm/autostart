@@ -4,7 +4,12 @@
 # To avoid mulitiple programs running
 function run_once {
     program=$1
+    restart=$2
     if ! pgrep -x $program > /dev/null; then
+        $program &
+    elif [ $restart = "restart" ]; then
+        pkill $program 
+        sleep 1s
         $program &
     fi
 }
@@ -23,6 +28,6 @@ xsetroot -cursor_name left_ptr &
 wmname LG3D
 
 # Autostart applications
-run_once picom
+run_once picom restart
 run_once sxhkd
 run_once tint2
