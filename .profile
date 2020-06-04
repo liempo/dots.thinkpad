@@ -4,5 +4,5 @@ export PATH
 
 # Set default programs
 export TERMINAL=/usr/bin/termite
-export BROWSER=/usr/bin/firefox
+export BROWSER=/usr/bin/opera
 export EDITOR=/usr/bin/vim
