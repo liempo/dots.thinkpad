@@ -19,8 +19,17 @@ call plug#begin('~/.vim/plugged')
 
     " Move selection plug in
     Plug 'matze/vim-move'
+
+    " Easier comments
+    Plug 'preservim/nerdcommenter'
 call plug#end()
 
+" I now hate escape, will replace it by jj
+inoremap jj <Esc>
+cnoremap jj <Esc> 
+
+" Space is the leader key
+let mapleader=" "
 
 " Shorter tabs because tabs is  4 spaces 
 set softtabstop=0 tabstop=4
@@ -49,3 +58,6 @@ nnoremap <Down> :echoe "Use 'j'"<CR>
 
 " Modifier for vim move plugin
 let g:move_key_modifier = 'C'
+
+" Nerd commenter settings
+let g:NERDSpaceDelims = 1
