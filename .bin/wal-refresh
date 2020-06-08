@@ -32,3 +32,9 @@ if [[ ! -L ~/.config/cava/config && -f ~/.cache/wal/colors.cava ]]; then
     ln -s ~/.cache/wal/colors.cava ~/.config/cava/config
 fi
 
+#################
+#    oomox      #
+#################
+oomox-cli ~/.cache/wal/colors-oomox --output pywal-oomo
+
+
