@@ -37,7 +37,7 @@ wal -i ~/Pictures/wallpaper.jpg -o wal-refresh
 | Music Player         | spotify-tui, spotifyd                                                                                |
 | System Monitor       | gotop                                                                                                |
 
-## M<p align="center">inor Details</p>
+## <p align="center">Minor Details</p>
  - In [dual.sh](https://github.com/liempo/dots/tree/master/.screenlayout/dual.sh), i added a function to create a temporary file, this is because I don't want to re-run the script everytime I try to refresh bspwm (by running bspwmrc).
  - There should be a script that will remove the temporary files (named as "fixed"), that will be triggered on poweroff/reboot
 
