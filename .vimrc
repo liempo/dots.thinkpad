@@ -22,6 +22,11 @@ call plug#begin('~/.vim/plugged')
 
     " Easier comments
     Plug 'preservim/nerdcommenter'
+
+    " The famous vim-surround
+    " along with auto-pairs
+    Plug 'tpope/vim-surround'
+    Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " I now hate escape, will replace it by jj
@@ -39,6 +44,9 @@ set smartindent
 
 " Show numbers
 set number
+
+" Automatically removing all trailing whitespace
+autocmd FileType c,cpp,java,php autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " Set themes and colorscehems
 let g:airline_powerline_fonts = 1
