@@ -31,3 +31,4 @@ wmname LG3D
 run_once picom restart
 run_once sxhkd
 run_once tint2
+run_once udiskie
