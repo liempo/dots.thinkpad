@@ -35,6 +35,6 @@ fi
 #################
 #    oomox      #
 #################
-oomox-cli ~/.cache/wal/colors-oomox --output pywal-oomo
+oomox-cli ~/.cache/wal/colors-oomox --output pywal-oomox
 
 
