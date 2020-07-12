@@ -27,6 +27,9 @@ xsetroot -cursor_name left_ptr &
 # Fix Java error
 wmname LG3D
 
+# Disable touch and pen
+sh ~/.screenlayout/mode.sh normal &
+
 # Autostart applications
 run_once picom restart
 run_once sxhkd

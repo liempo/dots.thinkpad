@@ -113,3 +113,20 @@ super + Print
 	screenshot -f
 
 ## -------------------------------------------------
+## Built-in buttons
+
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +10%
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@ -10%
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+XF86AudioStop
+	~/.screenlayout/mode.sh disabled
+XF86AudioPrev
+	~/.screenlayout/mode.sh touch_all
+XF86AudioPlay
+	~/.screenlayout/mode.sh normal
+XF86AudioNext
+	~/.screenlayout/mode.sh touch_pen
