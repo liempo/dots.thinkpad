@@ -74,7 +74,7 @@ border_color_pressed = #a1a8b9 0
 
 #-------------------------------------
 # Panel
-panel_items = PT:EPC:PPES:P
+panel_items = PT:EPC:PPPS:P
 panel_size = 100% 35
 panel_margin = 0 10
 panel_padding = 6 4 0
@@ -332,6 +332,23 @@ button = new
 button_text = 
 button_tooltip = Browser
 button_lclick_command = $BROWSER
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+button_font = material 14
+button_font_color = {foreground} 100
+button_padding = 4 0
+button_background_id = 0
+button_centered = 0
+button_max_icon_size = 0
+
+#-------------------------------------
+# Button 5
+button = new
+button_text = 
+button_tooltip = Bluetooth
+button_lclick_command = rofi-bluetooth
 button_rclick_command = 
 button_mclick_command = 
 button_uwheel_command = 
