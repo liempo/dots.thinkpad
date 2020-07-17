@@ -74,7 +74,7 @@ border_color_pressed = #a1a8b9 0
 
 #-------------------------------------
 # Panel
-panel_items = PT:EPC:PPPS:P
+panel_items = PT:EPC:PPPES:P
 panel_size = 100% 35
 panel_margin = 0 10
 panel_padding = 6 4 0
@@ -256,14 +256,14 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 2
 execp = new
-execp_command = ~/.config/tint2/media.sh
+execp_command = ~/.config/tint2/volume.sh
 execp_interval = 1
 execp_has_icon = 0
 execp_cache_icon = 1
 execp_continuous = 0
 execp_markup = 1
-execp_tooltip = Pause/play currently playing media. 
-execp_lclick_command = playerctl play-pause
+execp_tooltip = System volume
+execp_lclick_command = 
 execp_rclick_command = 
 execp_mclick_command = 
 execp_uwheel_command = 
