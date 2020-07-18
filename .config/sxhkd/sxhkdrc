@@ -116,11 +116,11 @@ super + Print
 ## Built-in buttons
 
 XF86AudioRaiseVolume
-	pactl set-sink-volume @DEFAULT_SINK@ +10%
+	volume up
 XF86AudioLowerVolume
-	pactl set-sink-volume @DEFAULT_SINK@ -10%
+	volume down
 XF86AudioMute
-	pactl set-sink-mute @DEFAULT_SINK@ toggle
+	volume mute
 
 XF86AudioStop
 	~/.screenlayout/mode.sh disabled
