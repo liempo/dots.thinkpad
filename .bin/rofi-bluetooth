@@ -276,7 +276,7 @@ show_menu() {
     esac
 }
 
-rofi_command="rofi -dmenu -columns 1 -no-fixed-num-lines -yoffset -100 -i -p"
+rofi_command="rofi -dmenu -columns 1 -p"
 # Rofi command to pipe into, can add any options here
 
 case "$1" in
