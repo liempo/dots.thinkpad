@@ -256,7 +256,7 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 2
 execp = new
-execp_command = ~/.config/tint2/volume.sh
+execp_command = ~/.config/tint2/volume-icon.sh
 execp_interval = 1
 execp_has_icon = 0
 execp_cache_icon = 1
