@@ -1,5 +1,7 @@
 #!/usr/bin/sh
 
+source ~/.cache/wal/colors.sh
+
 #################
 #     tint2     #
 #################
@@ -37,4 +39,8 @@ fi
 #################
 oomox-cli ~/.cache/wal/colors-oomox --output pywal-oomox
 
-
+#################
+#   lockscreen  #
+#################
+resolution=$(xdpyinfo  | grep -oP 'dimensions:\s+\K\S+')
+betterlockscreen --update $wallpaper --resolution $resolution

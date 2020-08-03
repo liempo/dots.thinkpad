@@ -105,6 +105,9 @@ super + z
 super + b
     $BROWSER
 
+super + x
+	betterlockscreen -l blur
+
 Print
 	sleep 0.2; \
 	screenshot -s
@@ -115,6 +118,8 @@ super + Print
 ## -------------------------------------------------
 ## Built-in buttons
 
+XF86AudioMedia
+	systemctl --user restart spotifyd.service
 XF86AudioRaiseVolume
 	volume up
 XF86AudioLowerVolume
