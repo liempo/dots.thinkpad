@@ -27,6 +27,12 @@ call plug#begin('~/.vim/plugged')
     " along with auto-pairs
     Plug 'tpope/vim-surround'
     Plug 'jiangmiao/auto-pairs'
+
+    " Vim HTML tag highlight
+    Plug 'gregsexton/MatchTag'    
+
+    " Indent guides
+    Plug 'Yggdroot/indentLine'
 call plug#end()
 
 " I now hate escape, will replace it by jj
@@ -63,9 +69,6 @@ nnoremap <Left> :echoe "Use 'h'"<CR>
 nnoremap <Right> :echoe "Use 'l'"<CR>
 nnoremap <Up> :echoe "Use 'k'"<CR>
 nnoremap <Down> :echoe "Use 'j'"<CR>
-
-" Modifier for vim move plugin
-let g:move_key_modifier = 'C'
 
 " Nerd commenter settings
 let g:NERDSpaceDelims = 1
