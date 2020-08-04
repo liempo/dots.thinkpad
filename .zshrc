@@ -29,6 +29,7 @@ bindkey '^H' backward-char
 alias ydl="youtube-dl"
 alias ls="ls -l --block-size=M"
 alias dots='git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+eval $(thefuck --alias)
 
 # Hide username and host
 prompt_context() {}
