@@ -118,8 +118,8 @@ super + Print
 ## -------------------------------------------------
 ## Built-in buttons
 
-XF86AudioMedia
-	systemctl --user restart spotifyd.service
+XF86Tools
+	pavucontrol
 XF86AudioRaiseVolume
 	volume up
 XF86AudioLowerVolume
