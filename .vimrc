@@ -21,6 +21,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'gregsexton/MatchTag'    
 
     " Flutter stuff
+    Plug 'dart-lang/dart-vim-plugin'
     Plug 'thosakwe/vim-flutter'
 call plug#end()
 
