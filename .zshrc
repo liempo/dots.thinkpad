@@ -33,3 +33,9 @@ eval $(thefuck --alias)
 
 # Hide username and host
 prompt_context() {}
+
+# Run 'ls' every 'cd'
+function chpwd() {
+    emulate -L zsh
+    ls -a
+}
