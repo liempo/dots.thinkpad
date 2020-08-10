@@ -2,27 +2,28 @@
 set encoding=utf-8
 
 call plug#begin('~/.vim/plugged')
-    " Pywal colorscheme
-    Plug 'dylanaraps/wal.vim'
+  " Pywal colorscheme
+  Plug 'dylanaraps/wal.vim'
 
-    " Essential stuff
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
-    Plug 'tpope/vim-surround'
-    Plug 'jiangmiao/auto-pairs'
-    Plug 'tpope/vim-commentary'
-    Plug 'haya14busa/incsearch.vim'
-    Plug 'Yggdroot/indentLine'
+  " Basic essential stuff
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-commentary'
+  Plug 'preservim/nerdtree'
+  Plug 'jiangmiao/auto-pairs'
 
-    " Sxhkd syntax highlighting
-    Plug 'kovetskiy/sxhkd-vim'
+  " Better incremental search
+  Plug 'haya14busa/incsearch.vim'
+
+  " Show indent guides 
+  Plug 'Yggdroot/indentLine'
+
+  " Sxhkd syntax highlighting
+  Plug 'kovetskiy/sxhkd-vim'
     
-    " Vim HTML tag highlight
-    Plug 'gregsexton/MatchTag'    
-
-    " Flutter stuff
-    Plug 'dart-lang/dart-vim-plugin'
-    Plug 'thosakwe/vim-flutter'
+  " Vim HTML tag highlight
+  Plug 'gregsexton/MatchTag'    
 call plug#end()
 
 " I now hate escape, will replace it by jj
