@@ -6,6 +6,3 @@ export PATH
 export TERMINAL=/usr/bin/termite
 export BROWSER=/usr/bin/opera
 export EDITOR=/usr/bin/vim
-
-# Set path android sdk for flutter
-export ANDROID_SDK_ROOT=/opt/android-sdk
