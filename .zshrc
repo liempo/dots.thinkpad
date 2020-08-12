@@ -26,9 +26,11 @@ bindkey '^L' forward-char
 bindkey '^H' backward-char
 
 # Aliases
+alias bt="bluetoothctl"
 alias ydl="youtube-dl"
 alias ls="ls -l --block-size=M"
-alias dots='git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+alias dots="git --git-dir=$HOME/.dots/ --work-tree=$HOME"
+alias adb="/opt/android-sdk/platform-tools/adb"
 eval $(thefuck --alias)
 
 # Hide username and host
