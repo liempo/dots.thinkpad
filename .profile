@@ -6,3 +6,6 @@ export PATH
 export TERMINAL=/usr/bin/termite
 export BROWSER=/usr/bin/opera
 export EDITOR=/usr/bin/vim
+
+# Set Android SDK path sys env
+export ANDROID_SDK_ROOT=/opt/android-sdk
